@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,500;1,400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+p{
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+a{
+    text-decoration: none;
+}
+
+img {
+    width: 180px;
+}
+
+.container, .book-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color:#90B194;
+}
+
+.book-content {
+    width: 65%;
+    min-width: 250px;
+    max-width: 400px;
+    height: 330px;
+    position: relative;
+    perspective: 1000px;
+    transition: 1s;
+}
+
+.book {
+    position: absolute;
+    width: 65%;
+    height: 100%;
+    transition: 1s;
+    transform-style: preserve-3d;
+    transform-origin: left;
+    cursor: pointer;
+}
+
+.face-front, .face-back{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.face-front{
+    box-shadow: inset 3px 0px 20px -7px rgb(110, 108, 108);
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.face-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateZ(-1px) rotateY(180deg);
+    box-shadow: inset -3px 1px 20px -7px gray;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+#book-page{
+    background-color: green;
+    background-image: url('../img/capa.png');
+}
+
+#book-page-back{
+    background-color: greenyellow ;
+    background-image: url('../img/contra-capa.png');
+}
+
+#book-page, #book-page-back {
+    background-size: 100% 100%;
+}
+
+
+/* classes que se agregam com o js */
+
+.trnsf {
+    transform: translateX(80px);
+}
+
+.trnsf-reset{
+    transform: translateX(0px);
+}
+
+
+
+
+/* @media - texto responsivo */
+
+@media screen and (max-width: 800px){
+    p{
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

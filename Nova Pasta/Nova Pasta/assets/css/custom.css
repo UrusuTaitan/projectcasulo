@@ -1,0 +1,51 @@
+.mt-1{
+    margin-top: 10px;
+}
+
+.mt-2{
+    margin-top: 20px;
+}
+
+.mt-3{
+    margin-top: 30px;
+}
+
+.p-1{
+    padding: 10px;
+}
+
+.p-2{
+    padding: 20px;
+}
+
+.p-3{
+    padding: 30px;
+}
+
+.pl-2 {
+    padding-left: 20px;
+}
+
+.text-sm {
+    font-size: 13px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-green {
+    color: green;
+}
+
+.text-blue {
+    color: blue;
+}
+
+.text-blue-clean {
+    color: #209bd6;
+}
+
+.bg-blue{
+    background-color: #c1d7d8;
+}
